@@ -19,10 +19,11 @@ public class StudentTest {
     // 2nd student
     System.out.print("Enter the student name: ");
     String name2 = input1.nextLine();
-    Student student2 = new Student(name2, grade);
-    System.out.printf("Enter %s's grade:%n", student2.getName()); // "%n"
+    
+    System.out.printf("Enter %s's grade:%n", name2); // "%n"
     int grade2 = input2.nextInt();
-    student2.setGrade(grade2);
+    
+    Student student2 = new Student(name2, grade2);
 
     // output for students
     System.out.printf("Welcome %s to the class!%n", student1.getName());
